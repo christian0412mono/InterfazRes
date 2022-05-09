@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InterfazRes.RegistrerPage">
+    <ContentPage.Content>
+        <Grid RowDefinitions="*, 2*, Auto">
+            <BoxView Grid.RowSpan="3">
+                <BoxView.Background>
+                    <LinearGradientBrush>
+                        <GradientStopCollection>
+                            <GradientStop Color="#161616" Offset="0"/>
+                            <GradientStop Color="#30343F" Offset="1"/>
+                        </GradientStopCollection>
+                    </LinearGradientBrush>
+                </BoxView.Background>
+            </BoxView>
+            <Grid>
+                <Path Data="M0,0H375V262.033s-9.025,4.813-55.426-10.71-70.141-83.047-130.3-83.22-83.544,67.7-130.893,83.22S0,262.033,0,262.033Z" 
+                  Aspect="Fill" Fill="white"/>
+                <Image Source="menu.png" WidthRequest="20" HeightRequest="20" HorizontalOptions="Start" VerticalOptions="Start" Margin="25"/>
+                <Image Source="search.png" WidthRequest="20" HeightRequest="20" HorizontalOptions="End" VerticalOptions="Start" Margin="25" />
+
+            </Grid>
+            <Image Grid.Row="0" Source="login.png" WidthRequest="100" HeightRequest="100" Margin="0,50,0,30"></Image>
+
+            <StackLayout Grid.Row="1" Padding="30,20">
+                <Label Text="(Binding Id)"/>
+                <Entry Placeholder="Nombre" PlaceholderColor="White"></Entry>
+                <Entry Placeholder="Apellido" PlaceholderColor="White"></Entry>
+                <Entry Placeholder="Celular" Keyboard="Telephone" PlaceholderColor="White"></Entry>
+                <Entry Placeholder="Correo Electronico" Keyboard="Email" PlaceholderColor="White"></Entry>
+                <Entry Placeholder="Contraseña" PlaceholderColor="White" IsPassword="True"></Entry>
+               
+                <Button Text="Registrarse" BackgroundColor="White" BorderRadius="15" TextColor="#2f3542"></Button>
+                <StackLayout Orientation="Horizontal">
+                   
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
